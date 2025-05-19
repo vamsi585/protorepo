@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: proto-definitions-api
+  description: Protobuf API for gRPC Greeter service
+spec:
+  type: grpc
+  lifecycle: production
+  owner: team-platform
+  definition:
+    $text:https://github.com/vamsi585/protorepo/blob/main/proto/proto/greetings.proto
