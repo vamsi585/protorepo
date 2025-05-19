@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: proto-definitions
+  description: gRPC proto definitions shared across services
+  tags:
+    - grpc
+    - proto
+    - shared
+spec:
+  type: library
+  lifecycle: production
+  owner: team-platform
+  system: grpc-platform
+  providesApis:
+    - proto-definitions-api
+
+ 
